@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Batalha Pokémon com Fila</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🏆 Batalha Pokémon com Fila</h1>
+  
+    <div class="card" id="boss">
+      <h2>Pokémon Chefe</h2>
+      <select id="boss-select">
+        <option value="charizard">Charizard</option>
+        <option value="mewtwo">Mewtwo</option>
+        <option value="gengar">Gengar</option>
+        <option value="blaziken">Blaziken</option>
+      </select>
+      <div>
+        <img id="boss-img" src="" alt="Boss Pokémon" />
+        <p id="boss-info"></p>
+      </div>
+    </div>
+  
+    <div>
+      <button id="add-player">Adicionar Desafiante</button>
+      <button id="fight">Batalhar</button>
+      <button id="reset-ranking">Resetar Ranking</button>
+    </div>
+  
+    <div class="card fila">
+      <h3>Fila de Desafiantes</h3>
+      <ul id="queue-list"></ul>
+    </div>
+  
+    <div class="card" id="battle-result"></div>
+  
+    <div class="card" id="ranking">
+      <h3>Ranking de Vencedores</h3>
+      <ul id="ranking-list"></ul>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
